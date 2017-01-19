@@ -1,0 +1,21 @@
+<html ng-app="TextInputModule">
+    <head>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script type="text/javascript" src="app.js"></script>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="row" ng-controller="InputController as controller">
+                <div class="col-sm-offset-2 col-sm-8 input-group">
+                    <span class="input-group-addon">Text</span>
+                    <input class="form-control" type="text" placeholder="Your wish is my command" ng-model="controller.textInput">
+                </div>
+                <div class="col-sm-offset-2 col-sm-4">
+                    <h5>Hey it displays whatever I type!!</h5>
+                    <h4 class="text-info">{{controller.textInput}}</h4>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
